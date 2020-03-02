@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Trivia Errepar</title>
+
+</head>
+<body onload="vista.datosUser()">
+    <div class="container">
+        <header>
+            <h1>Trivia: Ganancias y Bienes Personales</h1>
+            <h3>Jugador: <span id="juega"></span></h3>
+        </header>
+        <section>
+            <div class="preguntas">
+                <h4 id="num-preg"></h4>
+                <h4 id="text-preg">Texto de la pregunta</h4>
+            </div>
+            <div class="respuestas">
+                <input type="radio" name="respuestas" id="rta_1" value="male">
+                <label for="rta_1" id="rta1">hola</label><br>
+                <input type="radio" name="respuestas" id="rta_2" value="female">
+                <label for="rta_2" id="rta2">hola</label><br>
+                <input type="radio" name="respuestas" id="rta_3" value="other">
+                <label for="rta_3" id="rta3">hola</label><br>
+                <br>
+                <input type="submit" value="Submit">
+            </div>
+
+        </section>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/modelo.js"></script>
+    <script src="js/vista.js"></script>
+    <script src="js/controlador.js"></script>
+
+</body>
+</html>
